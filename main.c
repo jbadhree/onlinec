@@ -20,9 +20,14 @@ int binarySearch(int* a, int size, int x){
     //printf("X: %d , A[mid]: %d\n", x, a[mid]);
     if (x == a[mid]){
       result = mid;
+      //First Occurance of X
       //high = mid - 1;
-      low = mid + 1;
-      //return result;
+
+      // Last Occurance of X
+      //low = mid + 1;
+
+      //Any Occurance of X
+      return result;
     }
     else if (x < a[mid]){
       high = mid - 1;
